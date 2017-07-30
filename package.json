@@ -1,0 +1,20 @@
+{
+  "name": "comps",
+  "version": "1.0.0",
+  "description": "comps for mini program",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css":"sass --watch app.scss:app.wxss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwightNgan/miniProgramComponents.git"
+  },
+  "author": "dwightngan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwightNgan/miniProgramComponents/issues"
+  },
+  "homepage": "https://github.com/dwightNgan/miniProgramComponents#readme"
+}

@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view>
+    <import src="../../comps/toast/toast.wxml" />
+    <template is="toast" data="{{...toast}}" />
+</view>
