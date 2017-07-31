@@ -1,0 +1,8 @@
+@mixin autoPrefix($key,$name) {
+  -webkit-#{$key}: $name;
+  #{$key}: $name;
+}
+
+view {
+  box-sizing: border-box;
+}

@@ -17,14 +17,54 @@ function formatNumber(n) {
 }
 
 let objToCssStr = (obj) => {
-    let str='';
+    let str = '';
     Object.keys(obj).map((item, index) => {
-        str+=item+':'+obj[item]+';'
+        str += item + ':' + obj[item] + ';'
     });
     return str
 };
 
+let cssStrToObj = (str) => {
+    let arr = str.split(';'),
+        obj = {};
+    arr.map((item, index) => {
+        let keys = item.split(':');
+        obj[keys[0]] = keys[1];
+    });
+    return obj
+};
+
+let addStyle = (styleStr, obj) => {
+    if (typeof styleStr != 'string') styleStr = '';
+    return styleStr + objToCssStr(obj);
+};
+
+let changeStyle = (styleStr, obj) => {
+    if (typeof styleStr != 'string') {
+        // console.log('styleStr输入的不是字符串');
+        styleStr="";
+    }
+    let arr = styleStr==''? []:styleStr.split(';');
+    Object.keys(obj).map((key) => {
+        let added=false;
+        arr.map((item) => {
+            if (item.search(key) == 0) {
+                let index=arr.indexOf(item);
+                arr.splice(index, 1, key + ':' + obj[key]);
+                console.log(item,arr);
+                added=true
+            }
+        });
+        if(!added) arr.push(key + ':' + obj[key]);
+    });
+    return arr.join(';')
+
+};
+
 module.exports = {
     formatTime,
-    objToCssStr
+    objToCssStr,
+    cssStrToObj,
+    addStyle,
+    changeStyle
 };

@@ -1,5 +1,11 @@
 <!--index.wxml-->
 <view>
+    <import src="../../comps/alert/alert.wxml" />
+    <template is="alert" data="{{...alert}}" />
+
     <import src="../../comps/toast/toast.wxml" />
     <template is="toast" data="{{...toast}}" />
+
+    <button bindtap="showTheAlert">alert</button>
+    <button bindtap="test">test</button>
 </view>

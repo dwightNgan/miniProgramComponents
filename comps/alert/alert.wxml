@@ -1,0 +1,14 @@
+<template name="alert">
+    <view class="__alert" style="{{style}}">
+        <view class="__alert-title">
+            {{title? title:'i am a title'}}
+        </view>
+        <view class="__alert-content">
+            {{content? content:'i am some kinda content.i am some kinda content.i am some kinda content.i am some kinda content.i am some kinda content.'}}
+        </view>
+        <view class="__alert-btn">
+            <view bindtap="__cancel">{{cancelText? cancelText:'cancel'}}</view>
+            <view bindtap="__confirm">{{confirmText? confirmText:'OK'}}</view>
+        </view>
+    </view>
+</template>

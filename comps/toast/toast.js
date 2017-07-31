@@ -1,15 +1,15 @@
-import {objToCssStr} from '../../utils/util'
+import {changeStyle} from '../../utils/util'
 
 module.exports={
     toast(text){
-        let style=objToCssStr({opacity:0.8,});
-        this.setData({
-            toast:{text, style}
-        });
+        let toast={
+            text,
+            style:changeStyle('',{opacity:0.8,visibility:'visible'})
+        };
+        this.setData({toast});
         setTimeout(()=>{
-            let {toast}=this.data;
-            toast.style=objToCssStr({opacity:0});
+            toast.style=changeStyle(toast.style,{opacity:0,visibility:'hidden'});
             this.setData({toast})
-        },2000)
+        },2000);
     }
 };

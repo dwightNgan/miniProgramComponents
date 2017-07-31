@@ -1,9 +1,13 @@
+view {
+  box-sizing: border-box; }
+
 .__toast {
   position: absolute;
   left: 50%;
   top: 80%;
-  transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  visibility: hidden;
   width: 350rpx;
   min-height: 50rpx;
   line-height: 50rpx;
@@ -13,6 +17,47 @@
   background-color: black;
   font-size: 28rpx;
   color: white;
+  transition: all 0.5s ease; }
+
+.__alert {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+  z-index: 1;
+  visibility: hidden;
+  width: 600rpx;
+  margin: 0 auto;
+  padding: 0 30rpx;
+  background-color: white;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 10rpx 0 rgba(0, 0, 0, 0.5);
+  opacity: 0;
   transition: all 0.5s; }
+
+.__alert-title {
+  padding: 30rpx 0;
+  font-size: 40rpx;
+  text-align: center;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+.__alert-content {
+  padding: 30rpx 20rpx;
+  font-size: 28rpx;
+  text-indent: 2em;
+  line-height: 35rpx;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+.__alert-btn {
+  display: flex;
+  display: -webkit-flex; }
+  .__alert-btn view {
+    -webkit-flex: 1 1 0;
+    flex: 1 1 0;
+    text-align: center;
+    padding: 30rpx 0; }
+  .__alert-btn view:nth-child(1) {
+    opacity: 0.5; }
 
 /*# sourceMappingURL=app.wxss.map */

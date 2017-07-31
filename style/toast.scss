@@ -2,8 +2,8 @@
     position: absolute;
     left: 50%;
     top:80%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
+    @include autoPrefix(transform,translateX(-50%));
+    visibility: hidden;
     width: 350rpx;
     min-height: 50rpx;
     line-height: 50rpx;
@@ -13,5 +13,5 @@
     background-color: black;
     font-size: 28rpx;
     color: white;
-    transition: all 0.5s;
+    transition: all 0.5s ease;
 }
