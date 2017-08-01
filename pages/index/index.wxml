@@ -6,6 +6,13 @@
     <import src="../../comps/toast/toast.wxml" />
     <template is="toast" data="{{...toast}}" />
 
+    <import src="../../comps/avatar/avatar.wxml" />
+    <template is="avatar" data="{{size:'lg'}}" />
+    <template is="avatar" data="{{size:'md'}}" />
+    <template is="avatar" data="{{size:'sm'}}" />
+
     <button bindtap="showTheAlert">alert</button>
-    <button bindtap="test">test</button>
+    <button bindtap="test">toast</button>
+
+
 </view>

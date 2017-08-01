@@ -51,7 +51,6 @@ let changeStyle = (styleStr, obj) => {
             if (item.search(key) == 0) {
                 let index=arr.indexOf(item);
                 arr.splice(index, 1, key + ':' + obj[key]);
-                console.log(item,arr);
                 added=true
             }
         });

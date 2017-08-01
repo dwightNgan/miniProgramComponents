@@ -1,0 +1,5 @@
+<template name="avatar">
+    <view class="__avatar {{size? size:'md'}}">
+        <image src="../../images/avatar.png" mode="aspectFit" />
+    </view>
+</template>

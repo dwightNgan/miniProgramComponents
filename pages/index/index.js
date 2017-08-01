@@ -3,7 +3,6 @@ import {__toggleTheAlert, __cancel, __confirm} from  '../../comps/alert/alert';
 import {toast} from  '../../comps/toast/toast';
 let app = getApp();
 let pageObj = {
-    data: {},
     onLoad () {
     },
     showTheAlert(){

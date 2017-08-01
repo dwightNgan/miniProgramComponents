@@ -14,7 +14,7 @@ module.exports={
         alert.modal={style:''};
         alert.modal.style=changeStyle(alert.modal.style,{
             visibility:toggleCondition? 'visible':'hidden',
-            opacity:toggleCondition? 0.5:0
+            opacity:toggleCondition? 0.3:0
         });
         this.setData({alert})
     },

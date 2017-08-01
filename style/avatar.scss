@@ -1,0 +1,19 @@
+.__avatar{
+    image{
+        border-radius: 100%;
+        border:1px solid #eee;
+    }
+
+    &.lg{
+        width: 350rpx;
+        height: 350rpx;
+    }
+    &.md{
+        width: 250rpx;
+        height: 250rpx;
+    }
+    &.sm{
+        width: 150rpx;
+        height: 150rpx;
+    }
+}
