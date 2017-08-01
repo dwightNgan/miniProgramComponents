@@ -1,4 +1,6 @@
 <template name="alert">
+    <import src="../modal/modal.wxml" />
+    <template is="modal"  data="{{modal}}"/>
     <view class="__alert" style="{{style}}">
         <view class="__alert-title">
             {{title? title:'i am a title'}}

@@ -10,6 +10,12 @@ module.exports={
             visibility:toggleCondition? 'visible':'hidden',
             opacity:toggleCondition? 1:0
         });
+
+        alert.modal={style:''};
+        alert.modal.style=changeStyle(alert.modal.style,{
+            visibility:toggleCondition? 'visible':'hidden',
+            opacity:toggleCondition? 0.5:0
+        });
         this.setData({alert})
     },
     __cancel(){
