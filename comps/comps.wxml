@@ -1,5 +1,4 @@
 <template name="alert">
-    <import src="../modal/modal.wxml" />
     <template is="modal"  data="{{modal}}"/>
     <view class="__alert" style="{{style}}">
         <view class="__alert-title">
@@ -12,5 +11,19 @@
             <view bindtap="__cancel">{{cancelText? cancelText:'cancel'}}</view>
             <view bindtap="__confirm">{{confirmText? confirmText:'OK'}}</view>
         </view>
+    </view>
+</template>
+
+<template name="modal" >
+    <view class="__modal" style="{{modal.style}}"> </view>
+</template>
+
+<template name="toast">
+    <view class="__toast" style="{{style}}">{{text}}</view>
+</template>
+
+<template name="avatar">
+    <view class="__avatar {{size? size:'md'}}">
+        <image src="../../images/avatar.png" mode="aspectFit" />
     </view>
 </template>

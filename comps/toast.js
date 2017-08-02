@@ -1,4 +1,4 @@
-import {changeStyle} from '../../utils/util'
+import {changeStyle} from '../utils/util'
 
 module.exports={
     toast(text){

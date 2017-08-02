@@ -1,3 +1,0 @@
-<template name="modal" >
-    <view class="__modal" style="{{modal.style}}"> </view>
-</template>

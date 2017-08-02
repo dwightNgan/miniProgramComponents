@@ -1,6 +1,6 @@
 //index.js
-import {__toggleTheAlert, __cancel, __confirm} from  '../../comps/alert/alert';
-import {toast} from  '../../comps/toast/toast';
+import {__toggleTheAlert, __cancel, __confirm} from  '../../comps/alert';
+import {toast} from  '../../comps/toast';
 let app = getApp();
 let pageObj = {
     onLoad () {

@@ -1,12 +1,12 @@
 <!--index.wxml-->
 <view>
-    <import src="../../comps/alert/alert.wxml" />
+    <import src="../../comps/comps.wxml" />
     <template is="alert" data="{{...alert}}" />
 
-    <import src="../../comps/toast/toast.wxml" />
+    <!--<import src="../../comps/toast/toast.wxml" />-->
     <template is="toast" data="{{...toast}}" />
 
-    <import src="../../comps/avatar/avatar.wxml" />
+    <!--<import src="../../comps/avatar/avatar.wxml" />-->
     <template is="avatar" data="{{size:'lg'}}" />
     <template is="avatar" data="{{size:'md'}}" />
     <template is="avatar" data="{{size:'sm'}}" />
